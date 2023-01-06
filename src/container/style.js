@@ -12,7 +12,7 @@ export const RegistrationStyle = StyleSheet.create({
     headBgStyle: {
         alignItems: "center",
         width: width * 1,
-        height: height * 0.20,
+        height: height * 0.25,
         backgroundColor: '#0A1952',
     },
     linearGradient: {
@@ -48,7 +48,6 @@ export const RegistrationStyle = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#f6f8fa",
         overflow: "hidden",
-        padding: 25,
     },
     cardHeadCon: {
         marginBottom: 10
@@ -78,7 +77,7 @@ export const RegistrationStyle = StyleSheet.create({
         borderWidth: 0,
         borderColor: "#cccccc",
         backgroundColor: "#ffffff",
-        color: "#9933cc",
+        color: "#0A1952",
         borderStyle: "solid",
         borderRadius: 27,
         elevation: 0,
@@ -88,8 +87,10 @@ export const RegistrationStyle = StyleSheet.create({
         shadowRadius: 5,
         paddingHorizontal: 25
     },
+    mainButtonCon: {
+        paddingBottom: height * 0.10
+    },
     mainButton: {
-        width: 300,
         borderRadius: 8,
         backgroundColor: "#cdd1d3",
         paddingTop: 7,
@@ -131,7 +132,7 @@ export const OtpStyle = StyleSheet.create({
     headBgStyle: {
         alignItems: "center",
         width: width * 1,
-        height: height * 0.20,
+        height: height * 0.25,
         backgroundColor: '#0A1952',
     },
     linearGradient: {
@@ -167,7 +168,6 @@ export const OtpStyle = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#f6f8fa",
         overflow: "hidden",
-        padding: 25,
     },
     inputOtpIcon: {
         width: "100%",
@@ -191,7 +191,6 @@ export const OtpStyle = StyleSheet.create({
         elevation: 0,
     },
     mainButton: {
-        width: 300,
         borderRadius: 8,
         backgroundColor: "#cdd1d3",
         paddingTop: 7,
@@ -220,7 +219,8 @@ export const OtpStyle = StyleSheet.create({
         marginTop: 10
     },
     mainButtonCon: {
-        paddingTop: width * 0.45
+        paddingTop: height * 0.10,
+        paddingBottom: height * 0.10
     },
     footercon: {
         backgroundColor: '#fff',
@@ -247,7 +247,7 @@ export const DashboardStyle = StyleSheet.create({
     headBgStyle: {
         alignItems: "center",
         width: width * 1,
-        height: height * 0.20,
+        height: height * 0.25,
         backgroundColor: '#0A1952',
     },
     linearGradient: {
@@ -332,7 +332,7 @@ export const DashboardStyle = StyleSheet.create({
         marginHorizontal: 10,
         flexDirection: 'row',
         paddingVertical: 7,
-        paddingHorizontal: 15
+        paddingHorizontal: Platform.OS === 'ios' ? width * 0.04 : width * 0.03
     },
 
     subFooter2Text: {

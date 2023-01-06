@@ -11,7 +11,7 @@ export default function DashboardScreen() {
     return (
         <SafeAreaView style={DashboardStyle.container}>
             <StatusBar
-                backgroundColor="#61dafb"
+                backgroundColor="#0A1952"
                 barStyle={'light-content'}
                 translucent={false}
             />
@@ -55,7 +55,7 @@ export default function DashboardScreen() {
                                 </TouchableOpacity>
                             </View>
                         </View>
-                        <View style={[DashboardStyle.mainSubCard,]} >
+                        <View style={[DashboardStyle.mainSubCard,DashboardStyle.selectedCard]} >
                             <View style={DashboardStyle.subCard}>
                                 <Image
                                     style={DashboardStyle.cardImg}
@@ -76,7 +76,7 @@ export default function DashboardScreen() {
                                     style={DashboardStyle.cardImg}
                                     source={require('../assets/AssetsGrey.png')}
                                 />
-                                <Text style={[DashboardStyle.subCardText, DashboardStyle.flex,{color:'#92919A'}]}>Your Assets</Text>
+                                <Text style={[DashboardStyle.subCardText, DashboardStyle.flex, { color: '#92919A' }]}>Your Assets</Text>
                                 <TouchableOpacity style={{ direction: 'rtl' }}>
                                     <Image
                                         style={DashboardStyle.cardImg}
