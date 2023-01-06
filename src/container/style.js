@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import { Dimensions, Platform, StyleSheet } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -12,7 +12,7 @@ export const RegistrationStyle = StyleSheet.create({
     headBgStyle: {
         alignItems: "center",
         width: width * 1,
-        height: height * 0.25,
+        height: Platform.OS === 'ios' ? height * 0.20 : height * 0.25,
         backgroundColor: '#0A1952',
     },
     linearGradient: {
@@ -132,7 +132,7 @@ export const OtpStyle = StyleSheet.create({
     headBgStyle: {
         alignItems: "center",
         width: width * 1,
-        height: height * 0.25,
+        height: Platform.OS === 'ios' ? height * 0.20 : height * 0.25,
         backgroundColor: '#0A1952',
     },
     linearGradient: {
@@ -247,7 +247,7 @@ export const DashboardStyle = StyleSheet.create({
     headBgStyle: {
         alignItems: "center",
         width: width * 1,
-        height: height * 0.25,
+        height: Platform.OS === 'ios' ? height * 0.20 : height * 0.25,
         backgroundColor: '#0A1952',
     },
     linearGradient: {
@@ -332,7 +332,7 @@ export const DashboardStyle = StyleSheet.create({
         marginHorizontal: 10,
         flexDirection: 'row',
         paddingVertical: 7,
-        paddingHorizontal: Platform.OS === 'ios' ? width * 0.04 : width * 0.03
+        paddingHorizontal: Platform.OS === 'ios' ? width * 0.05 : width * 0.03
     },
 
     subFooter2Text: {
